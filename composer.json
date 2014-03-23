@@ -1,5 +1,5 @@
 {
-    "name": "bldr/bldr-git",
+    "name": "bldr-io/bldr-git",
     "description": "Git Extension for Bldr",
     "require": {
         "bldr-io/bldr": "~1.0.0"
