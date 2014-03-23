@@ -7,14 +7,18 @@ services:
         parent: bldr_git.abstract
         class: Bldr\Extension\Git\Call\AddCall
         tags: [{ name: git:add }]
-    bldr_git.commit:
-        parent: bldr_git.abstract
-        class: Bldr\Extension\Git\Call\CommitCall
-        tags: [{ name: git:commit }]
     bldr_git.checkout:
         parent: bldr_git.abstract
         class: Bldr\Extension\Git\Call\CheckoutCall
         tags: [{ name: git:checkout }]
+    bldr_git.commit:
+        parent: bldr_git.abstract
+        class: Bldr\Extension\Git\Call\CommitCall
+        tags: [{ name: git:commit }]
+    bldr_git.config:
+        parent: bldr_git.abstract
+        class: Bldr\Extension\Git\Call\ConfigCall
+        tags: [{ name: git:config }]
     bldr_git.init:
         parent: bldr_git.abstract
         class: Bldr\Extension\Git\Call\InitCall
