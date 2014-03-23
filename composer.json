@@ -2,7 +2,7 @@
     "name": "bldr-io/bldr-git",
     "description": "Git Extension for Bldr",
     "require": {
-        "bldr-io/bldr": "~1.0.0"
+        "bldr-io/bldr": "dev-master"
     },
     "license": "Apache2",
     "authors": [
