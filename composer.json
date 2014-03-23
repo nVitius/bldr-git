@@ -1,0 +1,20 @@
+{
+    "name": "bldr/bldr-git",
+    "description": "Git Extension for Bldr",
+    "require": {
+        "bldr-io/bldr": "~1.0.0"
+    },
+    "license": "Apache2",
+    "authors": [
+        {
+            "name": "Aaron Scherer",
+            "email": "aequasi@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bldr\\Extension\\Git\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
