@@ -1,0 +1,33 @@
+services:
+    bldr_git.abstract:
+        abstract: true
+        class: Bldr\Extension\Git\Call\AbstractGitCall
+        arguments: [@bldr_execute.execute]
+    bldr_git.add:
+        parent: bldr_git.abstract
+        class: Bldr\Extension\Git\Call\AddCall
+        tags: [{ name: git:add }]
+    bldr_git.commit:
+        parent: bldr_git.abstract
+        class: Bldr\Extension\Git\Call\CommitCall
+        tags: [{ name: git:commit }]
+    bldr_git.checkout:
+        parent: bldr_git.abstract
+        class: Bldr\Extension\Git\Call\CheckoutCall
+        tags: [{ name: git:checkout }]
+    bldr_git.init:
+        parent: bldr_git.abstract
+        class: Bldr\Extension\Git\Call\InitCall
+        tags: [{ name: git:init }]
+    bldr_git.push:
+        parent: bldr_git.abstract
+        class: Bldr\Extension\Git\Call\PushCall
+        tags: [{ name: git:push }]
+    bldr_git.remote_add:
+        parent: bldr_git.abstract
+        class: Bldr\Extension\Git\Call\Remote\AddCall
+        tags: [{ name: git:remote:add }]
+    bldr_git.remote_remove:
+        parent: bldr_git.abstract
+        class: Bldr\Extension\Git\Call\Remote\RemoveCall
+        tags: [{ name: git:remote:remove }]
